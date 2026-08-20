@@ -1,0 +1,19 @@
+name: dart_spike
+description: A simple command-line application.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.11.4
+
+# Add regular dependencies here.
+dependencies:
+  bip32: ^2.0.0
+  bip39: ^1.0.6
+  convert: ^3.1.2
+  eth_sig_util: ^0.0.9
+  web3dart: ^2.7.3
+  # path: ^1.9.0
+
+dev_dependencies:
+  lints: ^6.0.0

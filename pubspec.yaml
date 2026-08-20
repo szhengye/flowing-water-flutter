@@ -1,0 +1,54 @@
+name: flowing_water
+description: "流水供应商端 — Flutter 桌面节点(替换 web3-api provider-server + provider-portal)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # 状态管理 + 路由(wayfinder 05:Riverpod + go_router StatefulShellRoute)
+  flutter_riverpod: ^2.5.0
+  go_router: ^14.0.0
+
+  # 持久化 drift(wayfinder 06:单库,1:1 对齐 web3-api better-sqlite3 schema)
+  drift: ^2.16.0
+  sqlite3_flutter_libs: ^0.5.0
+  path_provider: ^2.1.0
+  path: ^1.9.0
+
+  # crypto(wayfinder 01/10:与 viem 互通已实测;AES-256-GCM 本地加密)
+  web3dart: ^2.7.3
+  # web3dart Web3Client 的 HTTP client(03a 链上事件监听)
+  http: ^1.6.0
+  bip39: ^1.0.6
+  bip32: ^2.0.0
+  eth_sig_util: ^0.0.9
+  pointycastle: ^3.8.0
+
+  # macOS Keychain(wayfinder 07:自动恢复解锁凭证)
+  flutter_secure_storage: ^9.0.0
+
+  # 网络:WS 到 relay(wayfinder 03)+ HTTP(dio,forwarder 上游流式 wayfinder 09)
+  web_socket_channel: ^3.0.0
+  dio: ^5.4.0
+  window_manager: ^0.5.2
+  tray_manager: ^0.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # drift codegen
+  drift_dev: ^2.16.0
+  build_runner: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    # 桌面托盘图标(10;模板图,占位可换)
+    - assets/icon/tray_icon.png

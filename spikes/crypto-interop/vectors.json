@@ -1,0 +1,10 @@
+{
+  "note": "viem-generated reference vectors for Dart<->viem crypto interop spike (ticket 10)",
+  "mnemonic": "legal winner thank year wave sausage worth useful legal winner thank yellow",
+  "derivationPath": "m/44'/60'/0'/0/0",
+  "derivedAddress": "0x58A57ed9d8d624cBD12e2C467D34787555bB1b25",
+  "testPrivateKey": "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
+  "testAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "fixedMessage": "flowing-water interop check: Dart<->viem EIP-191",
+  "fixedSignatureViem": "0xfd592fb82b6a7d3ca7e9bf91a986cf3cd5c29fe58939b9c3a27f64be8d5f04363d05e95cf4fd8004f03787d6599856b80f43cddb0b11aed52deb5d96b331b4671c"
+}

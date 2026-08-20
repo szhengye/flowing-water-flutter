@@ -1,0 +1,20 @@
+name: ws_handshake_spike
+description: relay WS 握手冒烟 — wayfinder ticket 04。
+version: 1.0.0
+
+environment:
+  sdk: ^3.11.4
+
+# 库版本与 spikes/crypto-interop/dart-spike 对齐(ticket 10 已实测互通)。
+dependencies:
+  bip32: ^2.0.0
+  bip39: ^1.0.6
+  eth_sig_util: ^0.0.9
+  web3dart: ^2.7.3
+  web_socket_channel: ^3.0.0
+  # ticket 11 e2e:dio 跑上游流式 HTTP;sqlite3 记 provider_log(内存库,不落盘)。
+  dio: ^5.7.0
+  sqlite3: ^2.4.0
+
+dev_dependencies:
+  lints: ^6.0.0

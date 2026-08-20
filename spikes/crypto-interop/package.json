@@ -1,0 +1,10 @@
+{
+  "name": "crypto-interop-ref",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Node/viem reference vector generator + Dart-signature verifier for the crypto interop spike",
+  "dependencies": {
+    "viem": "^2.55.0"
+  }
+}

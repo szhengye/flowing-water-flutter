@@ -1,0 +1,10 @@
+name: chain_smoke
+description: Polygon Amoy chain integration smoke (wayfinder 05/08 验证 web3dart→Amoy 真连)。
+environment:
+  sdk: ^3.11.4
+dependencies:
+  web3dart: ^2.7.3
+  web_socket_channel: ^3.0.0
+  http: ^1.6.0
+  bip39: ^1.0.6
+  bip32: ^2.0.0
